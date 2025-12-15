@@ -23,3 +23,8 @@ $ kubectl get all --all-namespaces
 kubectl expose deployment first-app --type=NodePort --port=8081
 
 minikube service first-app --url
+
+
+
+
+kubectl set image deployment/first-app kub-first-app=your-username/kub-first-app:v2
