@@ -28,3 +28,5 @@ minikube service first-app --url
 
 
 kubectl set image deployment/first-app kub-first-app=your-username/kub-first-app:v2
+
+kubectl rollout status deployment/first-app
