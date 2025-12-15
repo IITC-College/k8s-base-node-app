@@ -19,3 +19,10 @@ $ kubectl get nodes
 $ kubectl get all
 
 $ kubectl get all --all-namespaces
+
+kubectl expose deployment first-app \
+  --type=NodePort \
+  --port=8080
+
+
+minikube service first-app --url
